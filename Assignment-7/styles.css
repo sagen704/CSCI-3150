@@ -1,0 +1,48 @@
+:root {
+  --primary-color: rgb(28, 22, 111);
+  --important-text: #007aff;
+  --general-text: rgb(82, 82, 82);
+}
+
+html {
+  padding: 30px;
+}
+
+h1,
+h2 {
+  color: var(--primary-color);
+}
+p {
+  color: var(--general-text);
+}
+
+dd {
+  color: var(--general-text);
+  padding-bottom: 20px;
+}
+
+ul {
+  border: 2px solid var(--primary-color);
+}
+li {
+  color: var(--general-text);
+}
+ol {
+  border: 2px solid var(--primary-color);
+}
+ol,
+ul {
+  padding: 20px 20px 20px 20px;
+  border-radius: 4px;
+}
+em {
+  color: var(--general-text);
+}
+dt {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+strong {
+  color: var(--important-text);
+}
