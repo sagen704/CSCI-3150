@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* form styling */
+
+#wrapper {
+  width: 60%;
+  margin-left: 4%;
+}
+
+div#formcol1 {
+  float: left;
+  width: 100%;
+}
+
+label {
+  margin-right: 0.3em;
+  position: relative;
+  width: 6.3em; /* I made this deliberately wide – come up with your own optimal width */
+  display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+  padding-left: 15px;
+  text-align: right;
+}
+/* we place the id formcol1 in front of the li element in order to limit this formatting to the top part of the form */
+
+#formcol1 li {
+  list-style: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+label span {
+  position: absolute;
+  left: 0;
+  color: red;
+}
+
+#multchoice label {
+  width: auto;
+  padding-left: 0;
+  display: inline;
+  text-align: left;
+}
+
+#multchoice span {
+  margin-right: 8px; /* space between Lecture / Lab */
+}
+
+#multchoice input[type="radio"] {
+  margin-right: 2px; /* tighter gap between button and text */
+}
+
+select:focus,
+select:active,
+input:focus,
+input:active,
+input:focus + label,
+input:active + label,
+label[for]:focus,
+label[for]:active {
+  color: #fff !important;
+
+  background-color: #bb3d2f !important;
+}
+
+#formcol1 input.reqfield {
+  background: #ff9;
+}
+
+#red-asterisk {
+  color: red;
+}
+/* end of form css */
